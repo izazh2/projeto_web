@@ -28,3 +28,13 @@ textarea{
     padding: 10px;
     border-radius: 5px;
 }
+
+input::placeholder{
+    color: rgb(198, 156, 77);
+    font-size: 1.6em;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+}
