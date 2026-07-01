@@ -3,70 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto WEB - HTML/CSS</title>
+    <title>Projeto Web - HTML/CSS</Html></title>
     <link rel="stylesheet" href="../css/style_formulario.css">
 </head>
 <body>
-
-    <div id="link">
-        <a href="../index.html">Página inicial</a> | <a href="texto.html">Texto</a> | <a href="/outras_paginas/outro_texto.html">Outro Texto</a> | <a href="cadastro.html">Cadastro</a> | <a href="listas.html">Lista</a> | <a href="tabela.html">Tabela</a> | <a href="imagens.html">Imagens</a>
+    <div id="links">
+        <a href="../index.html">Página Inicial</a> | <a href="/paginas/texto.html">Texto</a> | <a href="/paginas/tabela.html">Tabela</a> | <a href="/paginas/listas.html">Lista</a> | <a href="/paginas/imagens.html">Imagens</a> | <a href="/paginas/cadastro.html">Cadastro</a> | <a href="/paginas/outras paginas/outro_texto.html">Outro Texto</a>
     </div>
 
     <div id="div-form">
         <h3>Formulário HTML</h3>
-
         <form name="form-pessoa" id="form-pessoa" method="post">
 
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" class="input-txt01" maxlength="30" required placeholder="Infome seu nome"> 
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" class="input-txt01" maxlength="30" required placeholder="Insira aqui seu nome">
 
-            <label for="cpf">CPF</label>
-            <input type="number" name="cpf" id="cpf" class="input-txt02" maxlength="14" required placeholder="Infome o CPF"> 
+            <label for="cpf">CPF:</label>
+            <input type="number" name="cpf" id="cpf" maxlength="14" class="input-txt02" placeholder="Insira o seu CPF" required>
 
-            <label for="cpf">CPF</label>
-            <input type="number" name="cpf" id="cpf" class="input-txt02" maxlength="14" required pattern="[0-9]{3}\[0-9]{3}\.[0-9]{3}-[0-9]{2}" placeholder="000.000.000-00"> 
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" maxlength="14" class="input-txt02" placeholder="000.000.000-00" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}" required>
 
-            <label for="sexo">Sexo</label>
-            <input type="radio" name="sexo" id="sxF" class="input-radio" value="F" required>Feminino
-            <input type="radio" name="sexo" id="sxM" class="input-radio" value="M" required>Masculino
-            <input type="radio" name="sexo" id="sxND" class="input-radio" value="N" required checked> Não Delarar 
+            <label for="sexo">Sexo:</label>
+            <input type="radio" name="sexo" id="sxF" required class="input-radio" value="F">Feminino
+            <input type="radio" name="sexo" id="sxM" required class="input-radio" value="M">Masculino
+            <input type="radio" name="sexo" id="sxND" required class="input-radio" value="N" checked>Não Declarar
 
             <label for="estado">Estado</label>
             <select name="estado" id="estado" class="input-txt02" required>
                 <option>Selecione o Estado</option>
-                <option value="AL">Alagoas</option>
+                <option value="Al">Alagoas</option>
                 <option value="Ba">Bahia</option>
                 <option value="Pe">Pernambuco</option>
                 <option value="Pb">Paraíba</option>
                 <option value="RN">Rio Grande do Norte</option>
-                <option value="Ce">Ceará</option>
+                <option value="Ce">Ceára</option>
                 <option value="Pi">Piauí</option>
-                <option value="MA">Maranhão</option>
+                <option value="Ma">Maranhão</option>
                 <option value="Se" selected>Sergipe</option>
             </select>
 
-            <label for="preferencias">Preferência</label>
-            <input type="checkbox" name="estudo" class="input-check" id="estudo" value="Estudo">Estudo
+            <label for="preferencias">Preferências:</label>
+            <input type="checkbox" name="estudo" class="input-check" id="estudo" value="estudo">Estudo
             <input type="checkbox" name="viagem" class="input-check" id="viagem" value="viagem">Viagem
             <input type="checkbox" name="trabalho" class="input-check" id="trabalho" value="trabalho">Trabalho
-            <input type="checkbox" name="compras" class="input-check" id="compras" value="compras">Compras
+            <input type="checkbox" name="compras" class="input-check" id="compras" value="compras" checked>Compras
 
             <label for="comentario">Comentário</label>
-            <textarea name="comentario" id="comentario" placeholder="Digite seu comentario"></textarea>
+            <textarea name="comentario" id="comentario" maxlength="40" placeholder="Digite seu comentario"></textarea>
 
             <label for="senha">Senha</label>
-            <input type="password" name="senha" id="senha" class="input-txt02" required placeholder="Informe um senha" maxlength="6">
+            <input type="password" name="senha" id="senha" class="input-txt02" required placeholder="Informe sua senha" maxlength="6">
 
-            <label for="datanascimento">Data Nascimento</label>
+            <label for="datanascimento">Data de Nascimento</label>
             <input type="date" name="datanascimento" id="datanascimento" class="input-txt02" required>
 
             <label for="quantidade">Quantidade</label>
-            <input type="range" name="quantidade" id="quantidade" class="input-txt02" min="0" max="10" value="2">
+            <input type="range" name="quantidade" id="quantidade" class="input-txt02" min="0" max="10" step="2" value="0" required>
 
-            <button type="submit" id="btn-Enviar" class="btn">Enviar</button>
-            <button type="reset" id="btn-Limpar" class="btn">Limpar</button>
+            <button type="submit" id="btn-enviar" class="btn">Enviar</button>
+            <button type="reset" id="btn-limpar" class="btn">Limpar</button>
             <button id="btn" class="btn">Botão</button>
+
         </form>
+
+        <form name="form-pessoa02">
+            
+        </form>
+
     </div>
 </body>
 </html>
