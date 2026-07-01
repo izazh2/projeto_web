@@ -30,20 +30,21 @@ textarea{
 }
 
 input::placeholder{
-    color: rgb(198, 156, 77);
+    color: blueviolet;
     font-size: 1.6em;
 }
 
 input[type="radio"], input[type="checkbox"]{
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 #div-form{
     width: 500px;
     min-height: 600px;
     margin: 20px auto;
-    background-color: beige;
+    background-color: rgb(189, 108, 182);
     padding: 20px;
     font-size: 1.4em;
 }
